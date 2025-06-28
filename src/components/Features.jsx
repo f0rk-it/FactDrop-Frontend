@@ -1,35 +1,52 @@
 import '../styles/features.css'
 
+
 export default function Features () {
     return (
         <>
             <h2 className='features_title'>What the Bot Can Do</h2>
 
-            <div className='feature_cards'>
-                <div className='feature_card'>
-                    <div className='emoji'>💡</div>
-                    <h3>Daily Facts</h3>
-                    <p>Get one mind-blowing fact everyday, no fluff, no filler.</p>
-                </div>
+            <ul className='cards'>
+                <li className='cards_item'>
+                    <div className='card'>
+                        <div className='card_content'>
+                            <div className='emoji'>💡</div>
+                            <h3>Daily Facts</h3>
+                            <p>Get one mind-blowing fact everyday, no fluff, no filler.</p>
+                        </div>
+                    </div>
+                </li>
 
-                <div className='feature_card'>
-                    <div className='emoji'>⚡</div>
-                    <h3>Instant Facts</h3>
-                    <p>Ask the bot for a random fact at anytime with /random.</p>
-                </div>
+                <li className='cards_item'>
+                    <div className='card'>
+                        <div className='card_content'>
+                            <div className='emoji'>⚡</div>
+                            <h3>Instant Access</h3>
+                            <p>Use <code>/random</code> to summon a fact anytime.</p>
+                        </div>
+                    </div>
+                </li>
 
-                <div className='feature_card'>
-                    <div className='emoji'>📚</div>
-                    <h3>Categorized Knowledge</h3>
-                    <p>Choose a topic and get facts filtered by your curiosity.</p>
-                </div>
+                <li className='cards_item'>
+                    <div className='card'>
+                        <div className='card_content'>
+                            <div className='emoji'>📚</div>
+                            <h3>Topics on Tap</h3>
+                            <p>Get facts by category — from weird science to odd history.</p>
+                        </div>
+                    </div>
+                </li>
 
-                <div className='feature_card'>
-                    <div className='emoji'>📩</div>
-                    <h3>Scheduled Delivery</h3>
-                    <p>Facts sent on your terms: daily, weekly, or when you say so.</p>
-                </div>
-            </div>
+                <li className='cards_item'>
+                    <div className='card'>
+                        <div className='card_content'>
+                            <div className='emoji'>🕒</div>
+                            <h3>Set Your Time</h3>
+                            <p>Choose when the bot drops your daily dose of trivia.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </>
     )
 }
