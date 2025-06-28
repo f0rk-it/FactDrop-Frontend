@@ -3,6 +3,7 @@ import '../styles/landingpage.css'
 import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
 import Features from "../components/Features";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 export default function LandingPage () {
     return (
@@ -21,9 +22,9 @@ export default function LandingPage () {
                 <Features />
             </section>
 
-            <section id="snippets"></section>
-
-            <section id="footer"></section>
+            <section id="why_choose_us">
+                <WhyChooseUs />
+            </section>
         </>
     )
 }

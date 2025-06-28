@@ -27,8 +27,10 @@
     background: white;
 }
 
-#snippets {
+#why_choose_us {
     height: 100vh;
     width: 98vw;
     background: url(../assets/background.png);
+    padding: 100px 20px 50px;
+    text-align: center;
 }

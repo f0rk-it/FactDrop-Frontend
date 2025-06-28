@@ -27,6 +27,7 @@ export default function Navbar () {
                 <a href="#about" className='navbar_link'>About</a>
                 <a href="#how_it_works" className='navbar_link'>How It Works</a>
                 <a href="#features" className='navbar_link'>Features</a>
+                <a href="#why_choose_us" className='navbar_link'>Why Choose Us</a>
             </div>
 
             <div className='navbar_right'>
