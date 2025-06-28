@@ -2,6 +2,7 @@ import Navbar from "../components/NavBar";
 import '../styles/landingpage.css'
 import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
+import Features from "../components/Features";
 
 export default function LandingPage () {
     return (
@@ -16,7 +17,9 @@ export default function LandingPage () {
                 <HowItWorks />
             </section>
 
-            <section id="features"></section>
+            <section id="features" className="notebook_style">
+                <Features />
+            </section>
 
             <section id="snippets"></section>
 
