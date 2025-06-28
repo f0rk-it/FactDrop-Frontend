@@ -19,6 +19,7 @@ const testimonials = [
 export default function WhyChooseUs () {
     const countersRef = useRef([])
     const [hasAnimated, setHasAnimated] = useState(false)
+    const [submitted, setSubmitted] = useState(false)
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -53,6 +54,32 @@ export default function WhyChooseUs () {
         }, 30)
     }
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        const name = e.target.name.value
+        const message = e.target.message.value
+
+        const res = await fetch('https://formspree.io/f/mqabwgqk', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, message })
+        })
+
+        if (res.ok) {
+            setSubmitted(true)
+            e.target.reset()
+
+            setTimeout(() => {
+                setSubmitted(false)
+            }, 4000)
+        } else {
+            alert('Something went wrong. Try again later.')
+        }
+    }
+
     return (
         <>
             <h2 className='section_title'>Why Choose Us</h2>
@@ -76,10 +103,11 @@ export default function WhyChooseUs () {
 
             <div className='feedback_form'>
                 <h3>Got Something to say?</h3>
-                <form>
-                    <input type="text" placeholder='Your Name' required />
-                    <textarea placeholder='Your feedback...' required></textarea>
+                <form onSubmit={handleSubmit}>
+                    <input type="text" name='name' placeholder='Your Name' required />
+                    <textarea placeholder='Your feedback...' name='message' required></textarea>
                     <CtaButton text="Submit" />
+                    {submitted && <p className='success_message'>Thanks! Feedback recieved</p>}
                 </form>
             </div>
 
