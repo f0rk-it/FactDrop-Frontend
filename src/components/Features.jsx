@@ -1,13 +1,20 @@
 import '../styles/features.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 
 export default function Features () {
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
     return (
         <>
             <h2 className='features_title'>What the Bot Can Do</h2>
 
             <ul className='cards'>
-                <li className='cards_item'>
+                <li className='cards_item' data-aos="fade-up" data-aos-delay="100">
                     <div className='card'>
                         <div className='card_content'>
                             <div className='emoji'>💡</div>
@@ -17,7 +24,7 @@ export default function Features () {
                     </div>
                 </li>
 
-                <li className='cards_item'>
+                <li className='cards_item' data-aos="fade-up" data-aos-delay="200">
                     <div className='card'>
                         <div className='card_content'>
                             <div className='emoji'>⚡</div>
@@ -27,7 +34,7 @@ export default function Features () {
                     </div>
                 </li>
 
-                <li className='cards_item'>
+                <li className='cards_item' data-aos="fade-up" data-aos-delay="300">
                     <div className='card'>
                         <div className='card_content'>
                             <div className='emoji'>📚</div>
@@ -37,7 +44,7 @@ export default function Features () {
                     </div>
                 </li>
 
-                <li className='cards_item'>
+                <li className='cards_item' data-aos="fade-up" data-aos-delay="400">
                     <div className='card'>
                         <div className='card_content'>
                             <div className='emoji'>🕒</div>
