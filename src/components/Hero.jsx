@@ -2,7 +2,7 @@ import '../styles/hero.css'
 import CtaButton from './CtaButton'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { use, useEffect } from 'react'
+import { useEffect } from 'react'
 
 export default function Hero () {
     useEffect(() => {
