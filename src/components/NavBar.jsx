@@ -42,7 +42,9 @@ export default function Navbar () {
             </div>
 
             <div className='navbar_right' data-aos="fade-left">
-                <CtaButton text="Start Receiving Facts" className="navbar_btn" />
+                <a href="https://t.me/fact_drop_bot" target='_blank'>
+                    <CtaButton text="Start Receiving Facts" className="navbar_btn" />
+                </a>
             </div>
         </nav>
     )

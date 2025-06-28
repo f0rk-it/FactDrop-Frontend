@@ -22,8 +22,9 @@ export default function Hero () {
                     <span>Your attention span is short. </span>
                     <span>Our facts are shorter!</span>
                 </p>
-
-                <CtaButton text="Start Receiving Facts →" />
+                <a href="https://t.me/fact_drop_bot" target='_blank' >
+                    <CtaButton text="Start Receiving Facts →" />
+                </a>
             </div>
 
             <div className="floating_facts">
