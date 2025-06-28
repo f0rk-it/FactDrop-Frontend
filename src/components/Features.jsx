@@ -6,7 +6,12 @@ import { useEffect } from 'react'
 
 export default function Features () {
     useEffect(() => {
-        Aos.init({ duration: 1000 })
+        Aos.init({
+             duration: 1000,
+             easing: 'ease-out',
+             once: false,
+             offset: 120,
+            })
     }, [])
 
     return (
