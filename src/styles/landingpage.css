@@ -6,7 +6,7 @@
 
 
 #how_it_works {
-    height: 125vh;
+    height: auto;
     width: 98vw;
     background: url(../assets/background.png);
     text-align: center;
@@ -16,7 +16,7 @@
 }
 
 #features {
-    height: 100vh;
+    height: auto;
     width: 98vw;
     background: url(../assets/background.png);
     padding: 100px 20px;
@@ -28,9 +28,11 @@
 }
 
 #why_choose_us {
-    height: 100vh;
+    height: auto;
     width: 98vw;
     background: url(../assets/background.png);
     padding: 100px 20px 50px;
     text-align: center;
 }
+
+/* RESPONSIVENESS */

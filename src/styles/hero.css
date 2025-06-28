@@ -109,3 +109,16 @@
         transform: translateY(0px) rotate(0deg);
     }
 }
+
+/* RESPONSIVENESS */
+@media (max-width: 600px) {
+    .dont_show {
+        display: none;
+    }
+
+    .fact_bubble {
+        max-width: 180px;
+        font-size: 0.85rem;
+        padding: 10px 14px;
+    }
+}

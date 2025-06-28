@@ -29,13 +29,13 @@
 }
 
 .mockup.iphone {
-    left: 300px;
+    left: 27%;
     transform: rotate(-10deg) scale(0.95);
     z-index: 1;
 }
 
 .mockup.samsung {
-    right: 300px;
+    right: 27%;
     transform: rotate(10deg) scale(0.95);
     z-index: 1;
 }
@@ -86,5 +86,74 @@
 
     40% {
         transform: scale(1.08);
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1200px) {
+    .mockup.mockup.iphone {
+        left: 23%;
+    }
+
+    .mockup.mockup.samsung {
+        right: 23%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mockup.mockup.iphone {
+        left: 21%;
+    }
+
+    .mockup.mockup.samsung {
+        right: 21%;
+    }
+}
+
+@media (max-width: 900px) {
+    .mockup.mockup.iphone {
+        left: 18%;
+    }
+
+    .mockup.mockup.samsung {
+        right: 18%;
+    }
+}
+
+@media (max-width: 800px) {
+    .mockup.mockup.iphone {
+        left: 15%;
+    }
+
+    .mockup.mockup.samsung {
+        right: 15%;
+    }
+}
+
+@media (max-width: 700px) {
+    .mockup.mockup.iphone {
+        left: 10%;
+    }
+
+    .mockup.mockup.samsung {
+        right: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .mockup.mockup.laptop {
+        max-width: 80%;
+        left: 5%;
+        right: 5%;
+    }
+
+    .mockup.mockup.iphone {
+        max-width: 30%;
+        left: 1%;
+    }
+
+    .mockup.mockup.samsung {
+        max-width: 30%;
+        right: 1%;
     }
 }
