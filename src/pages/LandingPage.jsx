@@ -1,6 +1,7 @@
 import Navbar from "../components/NavBar";
 import '../styles/landingpage.css'
 import Hero from "../components/Hero";
+import HowItWorks from "../components/HowItWorks";
 
 export default function LandingPage () {
     return (
@@ -11,7 +12,9 @@ export default function LandingPage () {
                 <Hero />
             </section>
 
-            <section id="how_it_works"></section>
+            <section id="how_it_works">
+                <HowItWorks />
+            </section>
 
             <section id="features"></section>
 

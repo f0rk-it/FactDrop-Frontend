@@ -6,9 +6,13 @@
 
 
 #how_it_works {
-    height: 100vh;
+    height: 125vh;
     width: 98vw;
     background: url(../assets/background.png);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 #features {
