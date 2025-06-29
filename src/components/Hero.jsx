@@ -16,9 +16,9 @@ export default function Hero () {
 
     return (
         <>
-            <div className="about_content" data-aos="flip-up">
+            <div className="about_content">
                 <h1 className="title">Daily facts that make you go <span className="gradient"> 'huh'</span></h1>
-                <p className="subtitle">
+                <p className="subtitle" data-aos="fade-up" data-aos-delay="200">
                     <span>Your attention span is short. </span>
                     <span>Our facts are shorter!</span>
                 </p>
