@@ -1,12 +1,44 @@
-# React + Vite
+# 🧠 FactDrop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FactDrop** is a sleek, responsive, animated landing page for a Telegram/WhatsApp bot that sends daily fun, weird, and mind-bending facts. Built with React and a love for clean black & white design, the site walks users through how the bot works, showcases features, testimonials, and collects feedback.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## Expanding the ESLint configuration
+![preview](https://github.com/user-attachments/assets/dfe10d44-366b-45a4-a3ca-a5a135f7719d)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## ✨ Features
+
+- 📱 **Fully responsive layout** — clean and mobile-friendly
+- 🧊 **Sticky glassmorphic navbar** — with border appearing on scroll
+- 💬 **Animated floating fact bubbles** — styled like Telegram messages
+- 💻 **Device mockup showcase** — fades in with blur (Mac + Phones)
+- 🧠 **Notebook-style feature cards** — animated on scroll
+- 🙋 **Testimonial slider** — infinitely looping horizontal feedback
+- 📈 **Animated stat counters** — subscribers, facts sent, etc.
+- 📝 **Feedback form** — with Formspree or Telegram integration
+- 🔗 **Social media footer** — GitHub, X (Twitter), WhatsApp icons
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **AOS (Animate on Scroll)** for scroll-triggered animations
+- **React Icons** for social icons
+- **Formspree** for feedback form handling
+- (Optional) **Telegram Bot API** for real-time message forwarding
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/yourusername/factdrop.git
+cd factdrop
+npm install
+npm run dev
