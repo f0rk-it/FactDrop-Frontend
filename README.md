@@ -42,3 +42,4 @@ git clone https://github.com/yourusername/factdrop.git
 cd factdrop
 npm install
 npm run dev
+```
